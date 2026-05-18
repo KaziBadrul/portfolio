@@ -1,0 +1,87 @@
+[
+    {
+        "title": "EconHub – AI-Powered Campus Marketplace",
+        "description": "AI-driven second-hand marketplace with computer vision to automatically assess item condition and generate quality confidence scores.",
+        "roles": [
+            "Next.js",
+            "Computer Vision",
+            "React",
+            "Node.js"
+        ],
+        "image": "/images/feature-work/feature-img-1.png"
+    },
+    {
+        "title": "Few-Shot Learning for Defect Detection in RMG Garments",
+        "description": "Researching few-shot learning techniques to identify and classify defects in garment manufacturing with minimal training data.",
+        "roles": [
+            "Computer Vision",
+            "Few-Shot Learning",
+            "ML Research"
+        ],
+        "image": "/images/feature-work/feature-img-2.png"
+    },
+    {
+        "title": "Transport Management System (TMS)",
+        "description": "Engineered a comprehensive fleet logistics platform with multi-step ticketing and real-time seat availability tracking.",
+        "roles": [
+            "Next.js",
+            "Prisma ORM",
+            "PostgreSQL",
+            "SQL"
+        ],
+        "image": "/images/feature-work/feature-img-1.png"
+    },
+    {
+        "title": "Acadex – Unified Academic Workspace",
+        "description": "Built a feature-rich note-taking and scheduling platform with rich text editing using Tiptap and OCR.",
+        "roles": [
+            "Next.js",
+            "TypeScript",
+            "React",
+            "Supabase"
+        ],
+        "image": "/images/feature-work/feature-img-2.png"
+    },
+    {
+        "title": "CashBlock – Budget Management App",
+        "description": "Designed and deployed a brutalist-aesthetic budget tracker with category-based transaction management and PWA.",
+        "roles": [
+            "Next.js",
+            "Prisma ORM",
+            "PostgreSQL",
+            "PWAs"
+        ],
+        "image": "/images/feature-work/feature-img-1.png"
+    },
+    {
+        "title": "MiniMinds – Interactive Learning App for Kids",
+        "description": "Created offline-first educational application with 6+ engaging mini-games for early childhood learning.",
+        "roles": [
+            "Java",
+            "JavaFX",
+            "SQLite",
+            "UI/UX Design"
+        ],
+        "image": "/images/feature-work/feature-img-2.png"
+    },
+    {
+        "title": "SPREAD – Disease Transmission Simulator",
+        "description": "Developed interactive disease spread simulator using agent-based modeling with probabilistic infection transmission.",
+        "roles": [
+            "Python",
+            "Pygame",
+            "Algorithms"
+        ],
+        "image": "/images/feature-work/feature-img-1.png"
+    },
+    {
+        "title": "TaskLoop – Task Management CLI",
+        "description": "Built task management CLI with group-based organization and integrated timer functionality.",
+        "roles": [
+            "C++",
+            "SQLite",
+            "User Authentication"
+        ],
+        "image": "/images/feature-work/feature-img-2.png"
+    }
+]
