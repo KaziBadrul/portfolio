@@ -5,6 +5,7 @@ import Experience from "./components/home/experience"
 import FeaturedWork from "./components/home/featured-work"
 import HeroSection from "./components/home/hero-section"
 import ProjectOverview from "./components/home/project-overview"
+import Certificates from "./components/home/certificates"
 import ScrollReveal from "./components/shared/ScrollReveal"
 
 const page = () => {
@@ -20,6 +21,10 @@ const page = () => {
       <Divider />
       <ScrollReveal>
         <FeaturedWork />
+      </ScrollReveal>
+      <Divider />
+      <ScrollReveal>
+        <Certificates />
       </ScrollReveal>
       <Divider />
       <ScrollReveal>
