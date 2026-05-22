@@ -2,12 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import certificatesData from "@/data/certificates.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 const Certificates = () => {
+    // Sort items with priority and fall back for others securely for SSR
+    const initialWithPriority = certificatesData
+        .filter((c: any) => typeof c.priority === 'number')
+        .sort((a: any, b: any) => a.priority - b.priority);
+    const initialWithoutPriority = certificatesData.filter((c: any) => typeof c.priority !== 'number');
+
+    const [sortedCertificates, setSortedCertificates] = useState<any[]>([...initialWithPriority, ...initialWithoutPriority]);
     const [showAll, setShowAll] = useState(false);
-    const displayedWork = showAll ? certificatesData : certificatesData?.slice(0, 3);
+
+    useEffect(() => {
+        // Safely shuffle non-prioritized certificates on the client side
+        const shuffled = [...initialWithoutPriority].sort(() => Math.random() - 0.5);
+        setSortedCertificates([...initialWithPriority, ...shuffled]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const displayedWork = showAll ? sortedCertificates : sortedCertificates?.slice(0, 3);
 
     return (
         <section>
@@ -64,7 +79,7 @@ const Certificates = () => {
                             })}
                         </div>
                     </div>
-                    {certificatesData?.length > 3 && (
+                    {sortedCertificates?.length > 3 && (
                         <div className="flex justify-center border-t border-primary/10 p-6">
                             <Button
                                 variant="outline"
