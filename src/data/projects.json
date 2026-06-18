@@ -13,7 +13,13 @@
     ],
     "imagePrefix": "careerpilot",
     "github": "https://github.com/KaziBadrul/CareerPilot",
-    "livePreview": "https://career-pilot-aiapp.vercel.app/"
+    "livePreview": "https://career-pilot-aiapp.vercel.app/",
+    "titles": [
+      {
+        "name": "CodeSprint 2026 #2",
+        "link": "https://www.facebook.com/photo?fbid=1433799215453875"
+      }
+    ]
   },
   {
     "title": "BrewMind – Local-First Ollama Workspace",
@@ -29,7 +35,8 @@
     ],
     "imagePrefix": "brewmind",
     "github": "https://github.com/KaziBadrul/BrewMind",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": []
   },
   {
     "title": "BikriHobe – AI-Powered Campus Marketplace",
@@ -43,7 +50,13 @@
     ],
     "imagePrefix": "bikrihobe",
     "github": "https://github.com/KaziBadrul/hackathon-econ-website",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": [
+      {
+        "name": "CodeRush 2025 #3",
+        "link": ""
+      }
+    ]
   },
   {
     "title": "Few-Shot Learning for Defect Detection in RMG Garments",
@@ -54,9 +67,10 @@
       "Few-Shot Learning",
       "ML Research"
     ],
-    "imagePrefix": "",
-    "github": "",
-    "livePreview": ""
+    "imagePrefix": "mlrag",
+    "github": "https://github.com/tasmiatabassum/fabric-defect-domain-shift",
+    "livePreview": "",
+    "titles": []
   },
   {
     "title": "Transport Management System (TMS)",
@@ -70,7 +84,8 @@
     ],
     "imagePrefix": "transportmanagementsystem",
     "github": "https://github.com/KaziBadrul/RDBMS_Lab_Project",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": []
   },
   {
     "title": "Acadex – Unified Academic Workspace",
@@ -84,7 +99,8 @@
     ],
     "imagePrefix": "acadex",
     "github": "https://github.com/KaziBadrul/Acadex",
-    "livePreview": "https://acadexapp.vercel.app/dashboard"
+    "livePreview": "https://acadexapp.vercel.app/dashboard",
+    "titles": []
   },
   {
     "title": "CashBlock – Budget Management App",
@@ -98,7 +114,8 @@
     ],
     "imagePrefix": "cashblock",
     "github": "https://github.com/KaziBadrul/CashBlock",
-    "livePreview": "http://cash-block.vercel.app/"
+    "livePreview": "http://cash-block.vercel.app/",
+    "titles": []
   },
   {
     "title": "MiniMinds – Interactive Learning App for Kids",
@@ -112,7 +129,8 @@
     ],
     "imagePrefix": "miniminds",
     "github": "https://github.com/KaziBadrul/miniminds",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": []
   },
   {
     "title": "SPREAD – Disease Transmission Simulator",
@@ -125,7 +143,8 @@
     ],
     "imagePrefix": "spread",
     "github": "https://github.com/voidsamin/spread",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": []
   },
   {
     "title": "TaskLoop – Task Management CLI",
@@ -138,6 +157,7 @@
     ],
     "imagePrefix": "taskloop",
     "github": "https://github.com/KaziBadrul/TaskLoop",
-    "livePreview": ""
+    "livePreview": "",
+    "titles": []
   }
 ]

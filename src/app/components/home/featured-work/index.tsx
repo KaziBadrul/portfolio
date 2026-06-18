@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Sparkles } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const FeaturedWork = () => {
@@ -55,6 +55,75 @@ const FeaturedWork = () => {
                                         className="overflow-hidden cursor-pointer relative w-full h-[220px] sm:h-[260px] md:h-[300px] rounded-t-lg"
                                         onClick={() => setSelectedProject(value)}
                                     >
+                                        {value?.titles && value.titles.length > 0 && (
+                                            <div className="absolute top-3 left-3 z-20 flex flex-col gap-2">
+                                                {value.titles.map((t: any, tIdx: number) => {
+                                                    const badgeContent = (
+                                                        <span
+                                                            className="title-badge-modern"
+                                                            style={{
+                                                                display: 'inline-flex',
+                                                                alignItems: 'center',
+                                                                gap: '6px',
+                                                                padding: '7px 14px',
+                                                                background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.85), rgba(79, 70, 229, 0.85))',
+                                                                backdropFilter: 'blur(12px)',
+                                                                WebkitBackdropFilter: 'blur(12px)',
+                                                                color: '#fff',
+                                                                border: '1px solid rgba(167, 139, 250, 0.35)',
+                                                                borderRadius: '8px',
+                                                                fontSize: '11px',
+                                                                fontWeight: 700,
+                                                                letterSpacing: '0.08em',
+                                                                textTransform: 'uppercase' as const,
+                                                                boxShadow: '0 0 20px rgba(124, 58, 237, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                                                                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                                                                cursor: t.link ? 'pointer' : 'default',
+                                                                animation: 'badgeGlow 3s ease-in-out infinite',
+                                                            }}
+                                                            onMouseEnter={(e) => {
+                                                                const el = e.currentTarget;
+                                                                el.style.transform = 'translateY(-2px) scale(1.03)';
+                                                                el.style.boxShadow = '0 0 30px rgba(124, 58, 237, 0.5), 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15)';
+                                                                el.style.background = 'linear-gradient(135deg, rgba(139, 92, 246, 0.95), rgba(99, 102, 241, 0.95))';
+                                                                el.style.borderColor = 'rgba(196, 181, 253, 0.5)';
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                const el = e.currentTarget;
+                                                                el.style.transform = 'translateY(0) scale(1)';
+                                                                el.style.boxShadow = '0 0 20px rgba(124, 58, 237, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)';
+                                                                el.style.background = 'linear-gradient(135deg, rgba(124, 58, 237, 0.85), rgba(79, 70, 229, 0.85))';
+                                                                el.style.borderColor = 'rgba(167, 139, 250, 0.35)';
+                                                            }}
+                                                        >
+                                                            <Sparkles size={12} style={{ color: '#c4b5fd', flexShrink: 0 }} />
+                                                            {t.name}
+                                                        </span>
+                                                    );
+
+                                                    if (t.link) {
+                                                        return (
+                                                            <Link
+                                                                key={tIdx}
+                                                                href={t.link}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                onClick={(e) => e.stopPropagation()}
+                                                                style={{ textDecoration: 'none' }}
+                                                            >
+                                                                {badgeContent}
+                                                            </Link>
+                                                        );
+                                                    }
+
+                                                    return (
+                                                        <div key={tIdx} onClick={(e) => e.stopPropagation()}>
+                                                            {badgeContent}
+                                                        </div>
+                                                    );
+                                                })}
+                                            </div>
+                                        )}
                                         <Image
                                             src={value?.image}
                                             alt={value?.title}
