@@ -3,16 +3,44 @@
     "title": "CareerPilot – AI-Powered Job Search Assistant",
     "description": "AI-driven job search platform that matches job listings to your CV using semantic search, fit scoring, and a multi-provider LLM layer for cover letter generation.",
     "readmeDescription": "CareerPilot is an AI-powered career platform for job seekers that parses uploaded CVs, indexes them into a vector database using Gemini embeddings, and performs RAG-grounded job fit scoring against live listings scraped from major job boards. It features an AI assistant for cover letter generation, saved jobs, search history, and an application progress tracker — all backed by Supabase and deployed on Vercel.",
-    "roles": ["RAG", "Multi-LLM", "Next.js", "Supabase", "Qdrant", "OpenAI"],
+    "roles": [
+      "RAG",
+      "Multi-LLM",
+      "Next.js",
+      "Supabase",
+      "Qdrant",
+      "OpenAI"
+    ],
     "imagePrefix": "careerpilot",
     "github": "https://github.com/KaziBadrul/CareerPilot",
     "livePreview": "https://career-pilot-aiapp.vercel.app/"
   },
   {
+    "title": "BrewMind – Local-First Ollama Workspace",
+    "description": "A local-first AI workspace for chatting with Ollama models, organizing conversations into projects called Brews, and benchmarking hardware to recommend suitable local models.",
+    "readmeDescription": "BrewMind is a desktop-inspired Next.js application that provides a streamlined interface for interacting with locally hosted Ollama models. Users can organize chats into project-based workspaces called Brews, customize themes and fonts, attach documents and images, render markdown and LaTeX content, and persist all data locally using IndexedDB. The platform also includes a browser-side benchmarking system that evaluates hardware performance and helps users select appropriate models for local AI workloads, all without requiring a remote backend.",
+    "roles": [
+      "Local AI",
+      "Ollama",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "IndexedDB"
+    ],
+    "imagePrefix": "brewmind",
+    "github": "https://github.com/KaziBadrul/BrewMind",
+    "livePreview": ""
+  },
+  {
     "title": "BikriHobe – AI-Powered Campus Marketplace",
     "description": "AI-driven second-hand marketplace with computer vision to automatically assess item condition and generate quality confidence scores.",
     "readmeDescription": "EconHub is an AI-powered campus marketplace designed to streamline second-hand item selling for university students. It uses a custom computer vision model to automatically verify the condition of uploaded items and generates an unbiased 'quality confidence score', helping build trust between buyers and sellers.",
-    "roles": ["Next.js", "Computer Vision", "React", "Node.js"],
+    "roles": [
+      "Next.js",
+      "Computer Vision",
+      "React",
+      "Node.js"
+    ],
     "imagePrefix": "bikrihobe",
     "github": "https://github.com/KaziBadrul/hackathon-econ-website",
     "livePreview": ""
@@ -21,7 +49,11 @@
     "title": "Few-Shot Learning for Defect Detection in RMG Garments",
     "description": "Researching few-shot learning techniques to identify and classify defects in garment manufacturing with minimal training data.",
     "readmeDescription": "Ongoing research project focusing on utilizing few-shot learning methodologies to classify defects in readymade garments (RMG) without needing vast datasets. This significantly reduces the overhead involved in annotating massive visual datasets for new types of defects.",
-    "roles": ["Computer Vision", "Few-Shot Learning", "ML Research"],
+    "roles": [
+      "Computer Vision",
+      "Few-Shot Learning",
+      "ML Research"
+    ],
     "imagePrefix": "",
     "github": "",
     "livePreview": ""
@@ -30,7 +62,12 @@
     "title": "Transport Management System (TMS)",
     "description": "Engineered a comprehensive fleet logistics platform with multi-step ticketing and real-time seat availability tracking.",
     "readmeDescription": "A comprehensive database-focused project utilizing Prisma ORM and PostgreSQL to route, schedule, and ticket regional fleet vehicles. The system handles live seat availability logic and concurrency transactions seamlessly.",
-    "roles": ["Next.js", "Prisma ORM", "PostgreSQL", "SQL"],
+    "roles": [
+      "Next.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "SQL"
+    ],
     "imagePrefix": "transportmanagementsystem",
     "github": "https://github.com/KaziBadrul/RDBMS_Lab_Project",
     "livePreview": ""
@@ -39,7 +76,12 @@
     "title": "Acadex – Unified Academic Workspace",
     "description": "Built a feature-rich note-taking and scheduling platform with rich text editing using Tiptap and OCR.",
     "readmeDescription": "Acadex centralizes the student experience by unifying advanced rich-text notes with built-in OCR integration right into your workflow. Features collaborative group editing and class scheduling powered by a highly reliable Supabase backend.",
-    "roles": ["Next.js", "TypeScript", "React", "Supabase"],
+    "roles": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Supabase"
+    ],
     "imagePrefix": "acadex",
     "github": "https://github.com/KaziBadrul/Acadex",
     "livePreview": "https://acadexapp.vercel.app/dashboard"
@@ -48,7 +90,12 @@
     "title": "CashBlock – Budget Management App",
     "description": "Designed and deployed a brutalist-aesthetic budget tracker with category-based transaction management and PWA.",
     "readmeDescription": "CashBlock offers a uniquely brutalist UI design approach to personal finance. Being an installable Progressive Web App (PWA), users can leverage lightning-fast budget entries with category segmentation right from their mobile homescreens.",
-    "roles": ["Next.js", "Prisma ORM", "PostgreSQL", "PWAs"],
+    "roles": [
+      "Next.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "PWAs"
+    ],
     "imagePrefix": "cashblock",
     "github": "https://github.com/KaziBadrul/CashBlock",
     "livePreview": "http://cash-block.vercel.app/"
@@ -57,7 +104,12 @@
     "title": "MiniMinds – Interactive Learning App for Kids",
     "description": "Created offline-first educational application with 6+ engaging mini-games for early childhood learning.",
     "readmeDescription": "MiniMinds is built from the ground up using JavaFX to provide a completely offline-first, vibrant, and interactive learning environment. It features more than six interconnected mini-games focused on teaching arithmetic, spelling, and cognitive patterns.",
-    "roles": ["Java", "JavaFX", "SQLite", "UI/UX Design"],
+    "roles": [
+      "Java",
+      "JavaFX",
+      "SQLite",
+      "UI/UX Design"
+    ],
     "imagePrefix": "miniminds",
     "github": "https://github.com/KaziBadrul/miniminds",
     "livePreview": ""
@@ -66,7 +118,11 @@
     "title": "SPREAD – Disease Transmission Simulator",
     "description": "Developed interactive disease spread simulator using agent-based modeling with probabilistic infection transmission.",
     "readmeDescription": "Leveraging Pygame to visually simulate viral spread mathematically over geographical populations using agent-based modeling. SPREAD lets users toggle infection proximity, transmission probability, and social isolation algorithms to understand pandemic dynamics.",
-    "roles": ["Python", "Pygame", "Algorithms"],
+    "roles": [
+      "Python",
+      "Pygame",
+      "Algorithms"
+    ],
     "imagePrefix": "spread",
     "github": "https://github.com/voidsamin/spread",
     "livePreview": ""
@@ -75,7 +131,11 @@
     "title": "TaskLoop – Task Management CLI",
     "description": "Built task management CLI with group-based organization and integrated timer functionality.",
     "readmeDescription": "TaskLoop represents an entirely self-contained, lightweight C++ and SQLite driven Command Line Interface tool for developers. It supports grouping tasks efficiently and utilizes a local database memory approach to be blazingly fast.",
-    "roles": ["C++", "SQLite", "User Authentication"],
+    "roles": [
+      "C++",
+      "SQLite",
+      "User Authentication"
+    ],
     "imagePrefix": "taskloop",
     "github": "https://github.com/KaziBadrul/TaskLoop",
     "livePreview": ""
