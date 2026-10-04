@@ -21,6 +21,28 @@
       }
     ]
   },
+ {
+  "title": "GridWise – LLM-Assisted Campus Energy Optimizer",
+  "description": "AI-assisted campus energy optimization system that interprets natural-language operator instructions, validates them with deterministic guardrails, and generates minimum-cost 24-hour energy schedules using linear programming.",
+  "readmeDescription": "GridWise is an LLM-assisted smart campus energy optimization platform built for the BUP CSE Fest 2026 Hackathon. It converts free-text campus operator notes into structured energy directives using an OpenAI language model, validates and repairs those directives through deterministic guardrails, and feeds them into a PuLP/CBC linear programming optimizer to generate a minimum-cost 24-hour energy schedule. A deterministic replay and validation layer independently verifies battery constraints, solar generation, grid usage, energy balance, and operator directives before returning the final plan. The system is exposed through a FastAPI service, includes extensive adversarial and reliability testing, supports Docker deployment, and is deployed on Render.",
+  "roles": [
+    "LLM",
+    "Optimization",
+    "FastAPI",
+    "OpenAI",
+    "PuLP",
+    "Docker"
+  ],
+  "imagePrefix": "gridwise",
+  "github": "https://github.com/ishmam259/gta_7",
+  "livePreview": "https://gridwise-api-gta-7.onrender.com",
+  "titles": [
+    {
+      "name": "BUP CSEFest 2026 #7",
+      "link": "https://www.facebook.com/share/p/18Ce56E8Ys/"
+    }
+  ]
+},
   {
     "title": "BrewMind – Local-First Ollama Workspace",
     "description": "A local-first AI workspace for chatting with Ollama models, organizing conversations into projects called Brews, and benchmarking hardware to recommend suitable local models.",
