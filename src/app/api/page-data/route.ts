@@ -3,15 +3,16 @@ import { NextResponse } from "next/server";
 const experienceData = [
     {
         icon: "/images/icon/tailwind-icon.svg", // This is a placeholder, User said they'd handle images
-        role: "Contract AI Solutions Developer - Upwork / Freelance",
-        location: "Remote",
-        startYear: "July 2025",
-        endYear: "November 2025",
+        role: "Applied AI Intern - Battery Low Interactive Ltd.",
+        location: "On-Site",
+        startYear: "September 2026",
+        endYear: "October 2026",
         bulletPoints: [
             "Engineered a data scraping and sentiment analysis pipeline using real-world multi-source data",
             "Built Python-based data aggregation system leveraging BeautifulSoup and Pandas",
             "Designed and implemented prompt engineering templates using OpenAI API to categorize sentiment with 90% accuracy",
             "Developed lightweight FastAPI backend to expose processed data for client's internal analytics team"
+            "Developed MCP for multiple projects"
         ]
     },
     {
