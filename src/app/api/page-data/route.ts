@@ -11,7 +11,7 @@ const experienceData = [
             "Engineered a data scraping and sentiment analysis pipeline using real-world multi-source data",
             "Built Python-based data aggregation system leveraging BeautifulSoup and Pandas",
             "Designed and implemented prompt engineering templates using OpenAI API to categorize sentiment with 90% accuracy",
-            "Developed lightweight FastAPI backend to expose processed data for client's internal analytics team"
+            "Developed lightweight FastAPI backend to expose processed data for client's internal analytics team",
             "Developed MCP for multiple projects"
         ]
     },
